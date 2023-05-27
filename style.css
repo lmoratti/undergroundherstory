@@ -21,6 +21,6 @@ ul{
 a{
 	color: #fdfb76;
 }
-li{
+.check{
 	  list-style-type: "✅";
 }
