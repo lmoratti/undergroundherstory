@@ -1,6 +1,6 @@
 //thank you https://github.com/tholman/cursor-effects/ this is from them. Check them out!
 //included instead of through https to ensure in 10 years this still works.
-export function rainbowCursor(options) {
+function rainbowCursor(options) {
   let hasWrapperEl = options && options.element;
   let element = hasWrapperEl || document.body;
 

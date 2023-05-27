@@ -8,6 +8,35 @@
 <script src="rainbowCursor.js"></script>
 <!--https://github.com/tholman/cursor-effects/ using hosted file instead of link to ensure working functionality in future -->
 <script src="browser.js"></script>
+<script>
+    function whitePage() {
+      // Remove all HTML elements from the page
+      document.body.innerHTML = '';
+      // Remove CSS stylesheets
+      var stylesheets = document.getElementsByTagName('link');
+      for (var i = 0; i < stylesheets.length; i++) {
+        stylesheets[i].parentNode.removeChild(stylesheets[i]);
+      }
+
+      // Remove inline styles
+      var inlineStyles = document.getElementsByTagName('style');
+      for (var j = 0; j < inlineStyles.length; j++) {
+        inlineStyles[j].parentNode.removeChild(inlineStyles[j]);
+      }
+      // Create a new text element
+      var summary = document.createElement('h1')
+      var summaryText = document.createTextNode("ChatGPT Summary :( ")
+      var newText = document.createElement('p');
+      var text = document.createTextNode("The 'undergroundherstory' project is a grassroots initiative led by Lizzie, who has limited knowledge about music but a deep appreciation for local bands. The project aims to curate the history of Seattle's local bands, as told by the bands themselves, with community involvement. Frustrated by the lack of information and media presence for many of these bands, Lizzie envisioned a website that collects the band bios, member details, sound descriptions, and their personal histories. The goal of the project is to provide a platform for local bands to share their stories and descriptions without the need for polish or perfection. It aims to capture the essence of these bands and serve as a historical document for future generations. In an ever-changing music landscape, where online content can easily disappear, the project seeks to preserve the legacy and narratives of these bands. The name 'undergroundherstory' reflects the focus on the often overlooked and underground music scene, specifically in the context of women's contributions. While critique of the name is not currently accepted, the project aims to celebrate and give voice to underrepresented artists. In terms of design, the project aims to recreate the aesthetic of late 90s to early 2000s websites, using basic HTML elements, color palettes, and occasionally low-resolution but amusing edits. The project is indeed open source, with the intention of encouraging collaboration and community involvement. By joining a union, participants can support the maintainer, Lizzie, and contribute to the project's development. If you have a band and would like to be featured on the website, you can create a page using a basic HTML tutorial. Band information such as the name, sound description, first show, member names or handles, pictures, logos, art, and social media links can be included. To request the addition of your page, you can submit it on GitHub. As the project evolves, there may be a template or improved accessibility options provided. For contacting Lizzie, you can reach her through Instagram (@lizzmoratti) or via GitHub. The site itself is open source, allowing anyone to contribute and improve its pages. ");
+      summary.appendChild(summaryText)
+      newText.appendChild(text);
+
+
+      // Append the new text element to the body
+      document.body.appendChild(summary)
+      document.body.appendChild(newText);
+    }
+  </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -86,6 +115,7 @@
 
 	<h1>how do i contact you</h1>
 	<p>ig <a href="https://www.instagram.com/lizzmoratti/" >@lizzmoratti</a> or through github </p>
+	<button onclick="whitePage()">Whitewash & Gentrify Site</button>
 	<hr />
 
     </main>
