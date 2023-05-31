@@ -1,49 +1,125 @@
-.tab{
-	margin-left: 40px;
-	color: white;
+.tab {
+    margin-left: 40px;
+    color: white;
 }
 
 body {
-  background-color: #49297e;
- 
+    background-color: #49297e;
+
 }
-.text-area{
-    align:center;
+
+.text-area {
+    align: center;
 }
+
 .headers {
-	color: #db0000;
-    text-align:center;
+    color: #db0000;
+    text-align: center;
     background-color: pink;
     display: block;
-    width:80vw; 
-    margin-left:10vw; 
-    overflow:auto;
+    min-width: 300px;
+    width: 80vw;
+    overflow: auto;
     border: 5px solid rgb(234, 0, 255);
 }
-h1{
-    color:#e10086;
-    align:center;
+
+h1 {
+    color: #e10086;
+    align: center;
     font-weight: bold;
     -webkit-text-stroke: 2px rgb(20, 3, 250);
 }
-p{
-	color:#ff6701;
+
+p {
+    color: #ff6701;
     text-align: left;
-	margin-right: 15px;
+    margin-right: 15px;
     margin-left: 25px;
-	font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS";
     font-size: medium;
 }
-ul{
-	color: #e10086;
+
+ul {
+    color: #e10086;
 }
-li{
+
+li {
     font-family: "Comic Sans MS";
-    text-align:left;
+    text-align: left;
 }
-.check{
-	  list-style-type: "✅";
+
+.check {
+    list-style-type: "✅";
 }
-td{
-    min-width: 25%;
+
+.social_container {
+    width: 100%;
+    text-align: center;
+}
+
+.social_row {
+    width: 25%;
+    min-width: 200px;
+    display: inline-block;
+    background-color: #0eebd8;
+    padding: 0 2rem;
+}
+
+.social_cell {
+    min-width: 300px;
+    width: 20%;
+    display: inline-block;
+}
+
+.wordart {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.wordart.rainbow {
+    background-color: #00fc86;
+    transform: scale(1, 1.5);
+    -webkit-transform: scale(1, 1.5);
+    -moz-transform: scale(1, 1.5);
+    -o-transform: scale(1, 1.5);
+    -ms-transform: scale(1, 1.5);
+}
+
+.wordart.rainbow .text {
+    background: red;
+    background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rotating-text {
+    display: inline-block;
+    animation: rotate-animation 2s linear infinite;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+    70% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
