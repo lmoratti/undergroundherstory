@@ -5,6 +5,7 @@
 
 body {
     background-color: #49297e;
+    cursor: url('./beautifulfreaksphotos/clownsinatank.png'), auto;
 
 }
 
@@ -13,6 +14,7 @@ body {
 }
 
 .headers {
+    
     color: #db0000;
     text-align: center;
     background-color: pink;
