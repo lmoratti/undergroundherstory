@@ -125,3 +125,23 @@ li {
         transform: rotate(360deg);
     }
 }
+.sound_container{
+background-image: url(./beautifulfreaksphotos/pictureofband.png);
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 80%;
+padding-bottom: 20rem;
+min-width: 480px;
+width: 100%;
+display: inline-block;
+color: black;
+}
+.sound_container p{
+    color:#2afc00;
+    font-weight: 500;
+    -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+}
+.sound_content{
+    background-color:  rgba(238, 20, 238, 0.5);
+    
+}
