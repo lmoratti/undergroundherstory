@@ -15,8 +15,9 @@ body {
     text-align:center;
     background-color: pink;
     display: block;
-    height:auto;
-    width: 50vw;
+    width:80vw; 
+    margin-left:10vw; 
+    overflow:auto;
     border: 5px solid rgb(234, 0, 255);
 }
 h1{
@@ -36,9 +37,13 @@ p{
 ul{
 	color: #e10086;
 }
-a{
-	color: #ff6701;
+li{
+    font-family: "Comic Sans MS";
+    text-align:left;
 }
 .check{
 	  list-style-type: "✅";
+}
+td{
+    min-width: 25%;
 }
