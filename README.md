@@ -25,6 +25,7 @@ yooo make a page using basic html tutorial to get started [like this one](https:
 
 it should have at least the following information, displayed in any way you like:
 - band name
+- all the history about how you got here you can find or make
 - how do you describe your sound
 - what was your first show
 - band members (names or handles)
