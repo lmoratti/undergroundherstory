@@ -1,0 +1,26 @@
+.tab{
+	margin-left: 40px;
+	color: white;
+}
+
+body {
+  background-color: #49297e;
+ 
+}
+h1 {
+	color: #00db96;
+}
+p{
+	color:#90dcff;
+	margin-right: 200px
+	font-family: "comic-sans";
+}
+ul{
+	color: #e10086;
+}
+a{
+	color: #fdfb76;
+}
+li{
+	  list-style-type: "✅";
+}
